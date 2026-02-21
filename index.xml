@@ -193,25 +193,35 @@
 &lt;li&gt;Workflow: &lt;a href="https://github.com/swanlake-io/swanlake/actions/workflows/performance.yml"&gt;&lt;code&gt;performance.yml&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Runner script: &lt;a href="https://github.com/swanlake-io/swanlake/blob/main/scripts/run-benchbase.sh"&gt;&lt;code&gt;scripts/run-benchbase.sh&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Use these sources as the canonical benchmark history and reproduction guide.&lt;/p&gt;</description></item><item><title>About SwanLake</title><link>https://swanlake.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/about/</guid><description>&lt;link rel="preload" as="image" href="https://swanlake.io/about/featured-background_hu_39aa23366f91c2d2.jpg" media="(max-width: 1200px)"&gt;
-&lt;link rel="preload" as="image" href="https://swanlake.io/about/featured-background_hu_3bf669c6de7ee62.jpg" media="(min-width: 1200px)"&gt;
+&lt;p&gt;Use these sources as the canonical benchmark history and reproduction guide.&lt;/p&gt;</description></item><item><title>About SwanLake</title><link>https://swanlake.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/about/</guid><description>&lt;link rel="preload" as="image" href="https://swanlake.io/about/featured-background_hu_9466a0c3f62e1e8.jpg" media="(max-width: 1200px)"&gt;
+&lt;link rel="preload" as="image" href="https://swanlake.io/about/featured-background_hu_710442b71e53f0f.jpg" media="(min-width: 1200px)"&gt;
 &lt;style&gt;
 #td-cover-block-0 {
- background-image: url(/about/featured-background_hu_39aa23366f91c2d2.jpg);
+ background-image: url(/about/featured-background_hu_9466a0c3f62e1e8.jpg);
 }
 @media only screen and (min-width: 1200px) {
  #td-cover-block-0 {
- background-image: url(/about/featured-background_hu_3bf669c6de7ee62.jpg);
+ background-image: url(/about/featured-background_hu_710442b71e53f0f.jpg);
  }
 }
 &lt;/style&gt;
-&lt;section id="td-cover-block-0" class="row td-cover-block td-cover-block--height-auto td-below-navbar js-td-cover td-overlay td-overlay--dark -bg-dark" &gt;
+&lt;section id="td-cover-block-0" class="row td-cover-block td-cover-block--height-auto td-below-navbar js-td-cover td-overlay td-overlay--dark -bg-swanlake" &gt;
  &lt;div class="col-12"&gt;
  &lt;div class="container td-overlay__inner"&gt;
  &lt;div class="text-center"&gt;
  &lt;h1 class="display-1 mt-0 mt-md-5 pb-4"&gt;About SwanLake&lt;/h1&gt;
  &lt;div class="pt-3 lead"&gt;
 &lt;p class="display-6"&gt;SwanLake is an Arrow Flight SQL server backed by DuckDB with DuckLake support.&lt;/p&gt;
+&lt;div class="td-cta-buttons my-5"&gt;
+ &lt;a class="btn btn-lg btn-primary" href="https://swanlake.io/docs/getting-started/quickstart/"&gt;
+ Quick Start
+ &lt;/a&gt;
+ &lt;a class="btn btn-lg btn-secondary" href="https://github.com/swanlake-io/swanlake" target="_blank" rel="noopener noreferrer"&gt;
+ GitHub
+ &lt;i class="fa-brands fa-github px-1"&gt;&lt;/i&gt;
+ &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="btn btn-link text-blue" href="#td-block-1" aria-label="Read more"&gt;&lt;i class="fa-solid fa-circle-chevron-down" style="font-size: 400%"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
  &lt;/div&gt;
  &lt;/div&gt;
@@ -222,28 +232,8 @@
 &lt;div class="col-12"&gt;
 &lt;div class="container text-center td-arrow-down"&gt;
 &lt;div class="h4 mb-0"&gt;
-&lt;p&gt;SwanLake focuses on a practical server runtime for analytics and ingestion workloads:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Arrow Flight SQL for high-throughput SQL over gRPC&lt;/li&gt;
-&lt;li&gt;DuckDB for embedded analytical execution&lt;/li&gt;
-&lt;li&gt;DuckLake integrations for data lake storage patterns&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-&lt;div&gt;&lt;a id="td-block-2" class="td-anchor-no-extra-offset"&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;section class="row td-box td-box--2 td-box--height-auto"&gt;
-&lt;div class="col"&gt;
-&lt;div class="container"&gt;
-&lt;h2 id="what-you-can-build"&gt;What You Can Build&lt;a class="td-heading-self-link" href="#what-you-can-build" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Lakehouse-style query services on top of Postgres and object storage&lt;/li&gt;
-&lt;li&gt;Fast ingestion pipelines for logs, events, and operational metrics&lt;/li&gt;
-&lt;li&gt;Internal analytics endpoints with simple deployment and operational controls&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="status-and-observability"&gt;Status and Observability&lt;a class="td-heading-self-link" href="#status-and-observability" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;SwanLake includes a status page to inspect active sessions and latency metrics.&lt;/p&gt;</description></item><item><title>Search Results</title><link>https://swanlake.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/search/</guid><description/></item><item><title>Website information</title><link>https://swanlake.io/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/site/</guid><description>&lt;p&gt;This site is built with Hugo + Docsy.&lt;/p&gt;
+&lt;h2 class="display-4 font-weight-bold mb-4"&gt;Practical Analytics Runtime&lt;/h2&gt;
+&lt;p class="lead text-muted"&gt;SwanLake focuses on providing a high-performance, simple, and extensible server for modern data workloads.&lt;/p&gt;</description></item><item><title>Search Results</title><link>https://swanlake.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/search/</guid><description/></item><item><title>Website information</title><link>https://swanlake.io/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/site/</guid><description>&lt;p&gt;This site is built with Hugo + Docsy.&lt;/p&gt;
 &lt;h2 id="repositories"&gt;Repositories&lt;a class="td-heading-self-link" href="#repositories" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Website: &lt;a href="https://github.com/swanlake-io/swanlake.github.io"&gt;https://github.com/swanlake-io/swanlake.github.io&lt;/a&gt;&lt;/li&gt;
