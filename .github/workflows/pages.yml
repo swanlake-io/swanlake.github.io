@@ -8,11 +8,11 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     env:
-      HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+      HUGO_CACHEDIR: ${{ github.workspace }}/.hugo_cache
     steps:
       - uses: actions/checkout@v4
         with:
