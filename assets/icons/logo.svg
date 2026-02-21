@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="SwanLake logo">
+  <defs>
+    <clipPath id="avatar-clip">
+      <circle cx="24" cy="24" r="24" />
+    </clipPath>
+  </defs>
+  <rect width="48" height="48" rx="24" fill="#ffffff" />
+  <image
+    href="https://avatars.githubusercontent.com/u/242102829?s=48&amp;v=4"
+    x="0"
+    y="0"
+    width="48"
+    height="48"
+    clip-path="url(#avatar-clip)"
+    preserveAspectRatio="xMidYMid slice"
+  />
+  <circle cx="24" cy="24" r="23.5" fill="none" stroke="#d6dde8" />
+</svg>

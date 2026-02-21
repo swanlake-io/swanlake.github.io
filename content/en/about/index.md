@@ -1,39 +1,42 @@
 ---
-title: About Goldydocs
+title: About SwanLake
 linkTitle: About
-description: A sample site using the Docsy Hugo theme.
+description: Project overview and goals.
 menu: { main: { weight: 10 } }
 ---
 
 {{% blocks/cover
-  title="About Goldydocs"
+  title="About SwanLake"
   height="auto td-below-navbar"
   image_anchor="bottom"
 %}}
 
-<!-- prettier-ignore -->
-{{% _param description %}}
+SwanLake is an Arrow Flight SQL server backed by DuckDB with DuckLake support.
 {.display-6}
 
 {{% /blocks/cover %}}
 
 {{% blocks/lead color="white" %}}
 
-Goldydocs is a sample site using the [Docsy](https://github.com/google/docsy)
-Hugo theme that shows what it can do and provides you with a template site
-structure. It’s designed for you to clone and edit as much as you like. See the
-different sections of the documentation and site for more ideas.
+SwanLake focuses on a practical server runtime for analytics and ingestion workloads:
+- Arrow Flight SQL for high-throughput SQL over gRPC
+- DuckDB for embedded analytical execution
+- DuckLake integrations for data lake storage patterns
 
 {{% /blocks/lead %}}
 
-{{% blocks/section type="row text-center h1" %}}
+{{% blocks/section %}}
 
-This is another section with center alignment
+## What You Can Build
 
-{{% /blocks/section %}}
+- Lakehouse-style query services on top of Postgres and object storage
+- Fast ingestion pipelines for logs, events, and operational metrics
+- Internal analytics endpoints with simple deployment and operational controls
 
-{{% blocks/section type="h1" %}}
+## Status and Observability
 
-This is another section with default alignment
+SwanLake includes a status page to inspect active sessions and latency metrics.
+
+![SwanLake Status Page](/images/status_page.png)
 
 {{% /blocks/section %}}

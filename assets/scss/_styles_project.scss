@@ -10,14 +10,227 @@ https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
 @import 'td/extra/buttons';
 @import 'td/extra/main-container';
 
-// Example of color tuning
+// Hero Section Gradient Enhancement
+.-bg-swanlake {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 45%, #0f766e 100%) !important;
+  background-image: linear-gradient(135deg, #0f172a 0%, #1e293b 45%, #0f766e 100%) !important;
+  position: relative;
+  overflow: hidden;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(45, 212, 191, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+}
+
+// Hero Typography
+.td-cover-block {
+  .display-1 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to bottom right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+  }
+
+  .display-6 {
+    font-weight: 400;
+    color: #94a3b8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+}
+
+// Custom Button Styles
+.td-cta-buttons {
+  .btn-lg {
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+  }
+
+  .btn-primary {
+    background: #0d9488;
+    color: white;
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+
+    &:hover {
+      background: #0f766e;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(13, 148, 136, 0.35);
+    }
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f8fafc;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.25);
+      color: white;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Lead Section Enhancement (adapted for dark mode)
+.td-box--white {
+  background-color: var(--bs-body-bg) !important;
+  color: var(--bs-body-color) !important;
+  padding: 5rem 0 !important;
+
+  .display-4 {
+    color: var(--bs-heading-color);
+  }
+
+  .lead, p {
+    color: var(--bs-secondary-color);
+  }
+}
+
+// Feature Section Overrides
 .td-box--primary {
-  // TODO: rework the td-box--* classes so that they don't override `color`;
-  // otherwise we can't use Bootstrap's CSS variables:
-  // --bs-link-color: $color !important;
-  // --bs-link-color-rgb: red !important;
-  a {
-    color: tint-color($primary, 80%) !important;
+  background-color: var(--bs-tertiary-bg) !important;
+  color: var(--bs-body-color) !important;
+  padding: 6rem 0 !important;
+
+  h2, h3, h4, p {
+    color: inherit !important;
+  }
+}
+
+// Feature Card Component
+.feature-card {
+  background: var(--bs-card-bg, #fff);
+  border-radius: 16px;
+  padding: 2.5rem;
+  height: 100%;
+  border: 1px solid var(--bs-border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #0d9488;
+
+    .feature-icon {
+      background: rgba(13, 148, 136, 0.1);
+      color: #0d9488;
+      transform: scale(1.1);
+    }
+  }
+
+  .feature-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--bs-secondary-bg);
+    color: var(--bs-secondary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--bs-heading-color);
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--bs-secondary-color);
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+}
+
+[data-bs-theme="dark"] {
+  .feature-card {
+    background: #1e293b;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .td-box--white {
+    background-color: #0f172a !important;
+  }
+  
+  .td-box--primary {
+    background-color: #111827 !important;
+  }
+
+  .swanlake-home-visual img {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.swanlake-home-visual {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 10%;
+    right: 10%;
+    height: 40px;
+    background: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0.15) 0%, transparent 70%);
+    z-index: -1;
+  }
+}
+
+.swanlake-home-visual img {
+  width: 100%;
+  max-width: 840px;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid var(--bs-border-color);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+// Secondary Section (Getting Started)
+.td-box--secondary {
+  background-color: #0f172a !important;
+  color: white !important;
+  padding: 6rem 0 !important;
+
+  h2 {
+    font-weight: 800;
+    margin-bottom: 3rem;
+  }
+
+  pre {
+    background: #1e293b !important;
+    border-radius: 12px;
+    padding: 1.5rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+
+    code {
+      color: #e2e8f0 !important;
+    }
   }
 }
