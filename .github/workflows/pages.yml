@@ -40,6 +40,10 @@ jobs:
       - run: npm run build:production
       # - name: Build
       #   run: hugo --minify
+      - name: Keep custom favicon only
+        run: |
+          mkdir -p public/favicons
+          find public/favicons -type f ! -name 'favicon.ico' -delete
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
