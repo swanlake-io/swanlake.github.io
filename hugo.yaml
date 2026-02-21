@@ -100,10 +100,6 @@ params:
         url: https://github.com/swanlake-io/swanlake
         icon: fab fa-github
         desc: Server and client source code.
-      - name: Website Repository
-        url: https://github.com/swanlake-io/swanlake.github.io
-        icon: fab fa-github
-        desc: Source for this documentation website.
       - name: Packages
         url: https://github.com/swanlake-io/swanlake/pkgs/container/swanlake
         icon: fa fa-box
