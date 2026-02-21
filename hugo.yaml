@@ -2,9 +2,6 @@ baseURL: https://swanlake.io/
 title: SwanLake
 
 contentDir: content/en
-defaultContentLanguage: en
-defaultContentLanguageInSubdir: false
-enableMissingTranslationPlaceholders: false
 
 enableRobotsTXT: true
 enableGitInfo: true
@@ -22,13 +19,6 @@ imaging:
   quality: 75
   anchor: smart
 
-languages:
-  en:
-    languageName: English
-    title: SwanLake
-    params:
-      description: Arrow Flight SQL server backed by DuckDB and DuckLake.
-
 markup:
   goldmark:
     parser:
@@ -45,6 +35,7 @@ outputs:
   section: [HTML, RSS]
 
 params:
+  description: Arrow Flight SQL server backed by DuckDB and DuckLake.
   version_menu: Releases
   archived_version: false
   version: 0.1
