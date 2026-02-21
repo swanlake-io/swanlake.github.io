@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SwanLake</title><link>https://www.swanlake.io/</link><description>Recent content on SwanLake</description><generator>Hugo</generator><language>en</language><atom:link href="https://www.swanlake.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview</title><link>https://www.swanlake.io/docs/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/docs/overview/</guid><description>&lt;h2 id="what-is-swanlake"&gt;What Is SwanLake?&lt;a class="td-heading-self-link" href="#what-is-swanlake" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SwanLake</title><link>https://swanlake.io/</link><description>Recent content on SwanLake</description><generator>Hugo</generator><language>en</language><atom:link href="https://swanlake.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview</title><link>https://swanlake.io/docs/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/docs/overview/</guid><description>&lt;h2 id="what-is-swanlake"&gt;What Is SwanLake?&lt;a class="td-heading-self-link" href="#what-is-swanlake" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;SwanLake is an Arrow Flight SQL server backed by DuckDB. It provides a gRPC SQL endpoint for fast query and ingestion flows, with optional DuckLake integrations for lake-style storage.&lt;/p&gt;
 &lt;h2 id="why-use-it"&gt;Why Use It?&lt;a class="td-heading-self-link" href="#why-use-it" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
@@ -15,10 +15,10 @@
 &lt;/ul&gt;
 &lt;h2 id="next-steps"&gt;Next Steps&lt;a class="td-heading-self-link" href="#next-steps" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.swanlake.io/docs/getting-started/quickstart/"&gt;Quick Start&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.swanlake.io/docs/configuration/"&gt;Configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.swanlake.io/docs/deployment/"&gt;Deployment&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Quick Start</title><link>https://www.swanlake.io/docs/getting-started/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/docs/getting-started/quickstart/</guid><description>&lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;li&gt;&lt;a href="https://swanlake.io/docs/getting-started/quickstart/"&gt;Quick Start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://swanlake.io/docs/configuration/"&gt;Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://swanlake.io/docs/deployment/"&gt;Deployment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Quick Start</title><link>https://swanlake.io/docs/getting-started/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/docs/getting-started/quickstart/</guid><description>&lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Rust toolchain (for local source builds), or Docker&lt;/li&gt;
 &lt;li&gt;Open ports &lt;code&gt;4214&lt;/code&gt; (Flight SQL) and &lt;code&gt;4215&lt;/code&gt; (status page)&lt;/li&gt;
@@ -32,7 +32,7 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cargo run --bin swanlake-cli --features&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;cli&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default this connects to &lt;code&gt;grpc://127.0.0.1:4214&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="verify-status-page"&gt;Verify Status Page&lt;a class="td-heading-self-link" href="#verify-status-page" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Open &lt;code&gt;http://127.0.0.1:4215&lt;/code&gt; to inspect:&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://www.swanlake.io/docs/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/docs/configuration/</guid><description>&lt;p&gt;SwanLake loads settings from environment variables with the &lt;code&gt;SWANLAKE_&lt;/code&gt; prefix.&lt;/p&gt;
+&lt;p&gt;Open &lt;code&gt;http://127.0.0.1:4215&lt;/code&gt; to inspect:&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://swanlake.io/docs/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/docs/configuration/</guid><description>&lt;p&gt;SwanLake loads settings from environment variables with the &lt;code&gt;SWANLAKE_&lt;/code&gt; prefix.&lt;/p&gt;
 &lt;h2 id="core-server"&gt;Core Server&lt;a class="td-heading-self-link" href="#core-server" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -156,7 +156,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;For the full and most up-to-date list, see &lt;a href="https://github.com/swanlake-io/swanlake/blob/main/CONFIGURATION.md"&gt;&lt;code&gt;CONFIGURATION.md&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Architecture</title><link>https://www.swanlake.io/docs/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/docs/architecture/</guid><description>&lt;h2 id="core-components"&gt;Core Components&lt;a class="td-heading-self-link" href="#core-components" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;For the full and most up-to-date list, see &lt;a href="https://github.com/swanlake-io/swanlake/blob/main/CONFIGURATION.md"&gt;&lt;code&gt;CONFIGURATION.md&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Architecture</title><link>https://swanlake.io/docs/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/docs/architecture/</guid><description>&lt;h2 id="core-components"&gt;Core Components&lt;a class="td-heading-self-link" href="#core-components" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;swanlake-server&lt;/code&gt;: binary crate that boots and serves Flight SQL.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;swanlake-core&lt;/code&gt;: shared runtime, config, SQL handlers, session management, metrics.&lt;/li&gt;
@@ -170,7 +170,7 @@
 &lt;li&gt;Results stream back as Arrow data.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="session-model"&gt;Session Model&lt;a class="td-heading-self-link" href="#session-model" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;SwanLake sessions are connection-affine and own server-side state. For parallelism, clients use multiple gRPC connections via pool abstractions.&lt;/p&gt;</description></item><item><title>Deployment</title><link>https://www.swanlake.io/docs/deployment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/docs/deployment/</guid><description>&lt;h2 id="container-deployment"&gt;Container Deployment&lt;a class="td-heading-self-link" href="#container-deployment" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;SwanLake sessions are connection-affine and own server-side state. For parallelism, clients use multiple gRPC connections via pool abstractions.&lt;/p&gt;</description></item><item><title>Deployment</title><link>https://swanlake.io/docs/deployment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/docs/deployment/</guid><description>&lt;h2 id="container-deployment"&gt;Container Deployment&lt;a class="td-heading-self-link" href="#container-deployment" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Use the published image from GitHub Container Registry:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker run --rm -p 4214:4214 -p 4215:4215 ghcr.io/swanlake-io/swanlake:latest
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Set environment variables to control server behavior, status endpoint, and integrations.&lt;/p&gt;
@@ -187,14 +187,14 @@
 &lt;li&gt;Build and test from the main repository workflows&lt;/li&gt;
 &lt;li&gt;Publish container images from tagged releases&lt;/li&gt;
 &lt;li&gt;Keep the docs site deployed from &lt;code&gt;swanlake.github.io&lt;/code&gt; repository&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Benchmark Notes</title><link>https://www.swanlake.io/docs/benchmark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/docs/benchmark/</guid><description>&lt;p&gt;SwanLake benchmark results are tracked in the main repository:&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>Benchmark Notes</title><link>https://swanlake.io/docs/benchmark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/docs/benchmark/</guid><description>&lt;p&gt;SwanLake benchmark results are tracked in the main repository:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Report: &lt;a href="https://github.com/swanlake-io/swanlake/blob/main/BENCHMARK.md"&gt;&lt;code&gt;BENCHMARK.md&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Workflow: &lt;a href="https://github.com/swanlake-io/swanlake/actions/workflows/performance.yml"&gt;&lt;code&gt;performance.yml&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Runner script: &lt;a href="https://github.com/swanlake-io/swanlake/blob/main/scripts/run-benchbase.sh"&gt;&lt;code&gt;scripts/run-benchbase.sh&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Use these sources as the canonical benchmark history and reproduction guide.&lt;/p&gt;</description></item><item><title>About SwanLake</title><link>https://www.swanlake.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/about/</guid><description>&lt;link rel="preload" as="image" href="https://www.swanlake.io/about/featured-background_hu_39aa23366f91c2d2.jpg" media="(max-width: 1200px)"&gt;
-&lt;link rel="preload" as="image" href="https://www.swanlake.io/about/featured-background_hu_3bf669c6de7ee62.jpg" media="(min-width: 1200px)"&gt;
+&lt;p&gt;Use these sources as the canonical benchmark history and reproduction guide.&lt;/p&gt;</description></item><item><title>About SwanLake</title><link>https://swanlake.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/about/</guid><description>&lt;link rel="preload" as="image" href="https://swanlake.io/about/featured-background_hu_39aa23366f91c2d2.jpg" media="(max-width: 1200px)"&gt;
+&lt;link rel="preload" as="image" href="https://swanlake.io/about/featured-background_hu_3bf669c6de7ee62.jpg" media="(min-width: 1200px)"&gt;
 &lt;style&gt;
 #td-cover-block-0 {
  background-image: url(/about/featured-background_hu_39aa23366f91c2d2.jpg);
@@ -243,7 +243,7 @@
 &lt;li&gt;Internal analytics endpoints with simple deployment and operational controls&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="status-and-observability"&gt;Status and Observability&lt;a class="td-heading-self-link" href="#status-and-observability" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;SwanLake includes a status page to inspect active sessions and latency metrics.&lt;/p&gt;</description></item><item><title>Search Results</title><link>https://www.swanlake.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/search/</guid><description/></item><item><title>Website information</title><link>https://www.swanlake.io/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/site/</guid><description>&lt;p&gt;This site is built with Hugo + Docsy.&lt;/p&gt;
+&lt;p&gt;SwanLake includes a status page to inspect active sessions and latency metrics.&lt;/p&gt;</description></item><item><title>Search Results</title><link>https://swanlake.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/search/</guid><description/></item><item><title>Website information</title><link>https://swanlake.io/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://swanlake.io/site/</guid><description>&lt;p&gt;This site is built with Hugo + Docsy.&lt;/p&gt;
 &lt;h2 id="repositories"&gt;Repositories&lt;a class="td-heading-self-link" href="#repositories" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Website: &lt;a href="https://github.com/swanlake-io/swanlake.github.io"&gt;https://github.com/swanlake-io/swanlake.github.io&lt;/a&gt;&lt;/li&gt;
