@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on SwanLake</title><link>https://www.swanlake.io/docs/getting-started/</link><description>Recent content in Getting Started on SwanLake</description><generator>Hugo</generator><language>en</language><atom:link href="https://www.swanlake.io/docs/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Start</title><link>https://www.swanlake.io/docs/getting-started/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.swanlake.io/docs/getting-started/quickstart/</guid><description>&lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rust toolchain (for local source builds), or Docker&lt;/li&gt;
+&lt;li&gt;Open ports &lt;code&gt;4214&lt;/code&gt; (Flight SQL) and &lt;code&gt;4215&lt;/code&gt; (status page)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="run-swanlake-server"&gt;Run SwanLake Server&lt;a class="td-heading-self-link" href="#run-swanlake-server" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;From the SwanLake repository root:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;RUST_LOG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;info cargo run --bin swanlake
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or run the container image:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker run --rm -p 4214:4214 -p 4215:4215 ghcr.io/swanlake-io/swanlake:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="connect-with-cli"&gt;Connect with CLI&lt;a class="td-heading-self-link" href="#connect-with-cli" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;cargo run --bin swanlake-cli --features&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;cli&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default this connects to &lt;code&gt;grpc://127.0.0.1:4214&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="verify-status-page"&gt;Verify Status Page&lt;a class="td-heading-self-link" href="#verify-status-page" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Open &lt;code&gt;http://127.0.0.1:4215&lt;/code&gt; to inspect:&lt;/p&gt;</description></item></channel></rss>
