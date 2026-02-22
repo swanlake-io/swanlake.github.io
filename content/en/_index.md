@@ -5,37 +5,19 @@ params:
   body_class: td-navbar-links-all-active
 ---
 
-{{% blocks/cover
-  title="SwanLake"
-  color="swanlake"
-  height="full td-below-navbar"
-%}}
-
-Arrow Flight SQL server backed by DuckDB, built for fast analytics and data lake ingestion.
-{.display-6}
-
-<div class="td-cta-buttons my-5">
-  <a class="btn btn-lg btn-primary" href="docs/getting-started/quickstart/">
-    Quick Start
-  </a>
-  <a class="btn btn-lg btn-secondary" href="https://github.com/swanlake-io/swanlake" target="_blank" rel="noopener noreferrer">
-    GitHub
-    <i class="fa-brands fa-github px-1"></i>
-  </a>
-</div>
-
-{{% blocks/link-down %}}
-
-{{% /blocks/cover %}}
-
 {{% blocks/lead color="white" %}}
 
-<h2 class="display-4 font-weight-bold mb-4">Fast. Simple. Extensible.</h2>
-
-<p class="lead text-muted">SwanLake runs a high-performance Arrow Flight SQL service with DuckDB execution and DuckLake integrations.</p>
-
-<div class="swanlake-home-visual">
-  <img src="/images/swanlake.jpeg" alt="SwanLake architecture overview" loading="lazy" />
+<div class="swanlake-home-video">
+  <div class="ratio ratio-16x9">
+    <iframe
+      src="https://www.youtube.com/embed/XVm3sptCfCA"
+      title="SwanLake introduction video"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
 </div>
 
 {{% /blocks/lead %}}
